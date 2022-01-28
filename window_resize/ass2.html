@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Vertical Tabs </title>
+
+    <style >
+        body {
+            margin:10px;
+            padding: 0;
+            background-color:gainsboro;
+        }
+        h1{
+            text-align: center;
+            font-variant: small-caps;
+        }
+        .container{
+            margin:40px auto;
+            width:100%;
+            border: 1px solid #111;
+            border-radius: 10px;
+        }
+        .tab{
+            display: inline;
+            text-align: center;
+            line-height:45px;
+            font-size: 30px;
+            background-color: rgba(196, 36, 31, 0.219);
+            margin: 0 5px 0px 0px;
+            padding: 5px 10px; 
+            border-radius:5px 5px 0 0 ;
+        }
+        .tab a{
+            text-decoration: none;
+            color:#111;
+        }
+        .tab:hover, .tab a:active{
+             background-color:rgba(32, 178, 171, 0.801);
+        }
+        .language{
+            font-size: 20px;
+            padding: 20px ;
+            margin:0;
+            line-height: 60px;
+            background-color: rgba(196, 36, 31, 0.219);
+        }
+   
+    </style>
+
+</head>
+<body>
+    <h1>Responsive Tabs</h1>
+    <hr>
+    <div class="container">
+        
+        <div class="head">
+            <div id="hindi" class="tab"><a href="#Tab_1">Hindi</a></div>
+            <div id="english" class="tab"><a href="#Tab_2">English</a> </div>
+            <div id="marathi" class="tab" ><a href="#Tab_3">Marathi</a> </div>
+            <div id="others" class="tab" ><a href="#Tab_4">Others</a></div>
+        </div>
+            <div class="para">
+            <p id="Tab_1"  class="language">
+                Hindi has been described as a standardised and Sanskritised register 
+                of the Hindustani language, which itself is based primarily on the 
+                Khariboli dialect of Delhi and neighbouring areas of Northern India.
+                Hindi, written in the Devanagari script, is one of the two official
+                languages of the Government of India, along with the English language.
+            </p>
+
+            <p  id="Tab_2" class="language"> 
+                English is a West Germanic language that was first spoken in early medieval
+                England and eventually became a global lingua franca. It is named after the 
+                Angles, one of the Germanic tribes that migrated to the area of Great Britain 
+                that later took their name, as England. 
+            </p>
+        
+             <p id="Tab_3" class="language">
+                Marathi is an Indo-Aryan language spoken predominantly by Marathi people 
+                of Maharashtra, India. It is the official language and co-official language 
+                in the Maharashtra and Goa states of Western India, respectively and is one 
+                of the 22 scheduled languages of India. With 83 million speakers as of 2011, 
+                Marathi ranks 10th in the list of languages with most native speakers in the world.
+             </p>
+           
+            <p  id="Tab_4" class="language">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis laborum suscipit
+              aut voluptatibus numquam, ducimus soluta corrupti doloremque, optio reiciendis.
+              Exercitationem nihil amet iusto aut, sequi inventore ratione facere.
+            </p>
+        </div>
+    </div>
+    <script src="ass2.js"></script> 
+    
+</body>
+</html>
