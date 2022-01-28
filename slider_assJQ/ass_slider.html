@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Slider</title>
+
+    <style>
+      body {
+        margin: 30px;
+        box-sizing: border-box;
+        background-color: lightgray;
+      }
+      h1 {
+        text-align: center;
+        color: #111;
+        text-transform: uppercase;
+      }
+      .active{
+        display: inline-block;
+      }
+      .image-slide{
+        display: none;
+      }
+      .slide-container{
+        width: 100%;
+        height: 500px;
+        position: relative;
+       
+      }
+      .slide-image img{
+        width: 100%;
+        height: 500px;
+        margin: auto; 
+      }
+      a{
+        text-decoration: none;
+      }
+      .pre,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #111;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .pre {
+        left: 0;
+      }
+      .next {
+        right: 0;
+      }
+      .pre:hover,
+      .next:hover {
+        background-color: lightslategrey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Slideshow</h1>
+
+    <div class="slides-container"> 
+      <div class="slide-image ">
+      <img id="1" class="active" src="./img.png" alt="image1" />
+      <img id="2" class="image-slide" src="./img2.jpg" alt="shoping" />
+      <img id="3" class="image-slide" src="./kids.png" alt="kids" />
+      <img id="4" class="image-slide" src="./rise.jpg" alt="kids" />
+      </div>
+      <a class="pre" href="#">&#10094;</a>
+      <a class="next" href="#">&#10095;</a>
+    </div>
+
+    <script src="ass_slider.js"></script>
+  </body>
+</html>
