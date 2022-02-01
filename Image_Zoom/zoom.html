@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html long='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Image Zoom In Assignment</title>
+        <style>
+            .img_container img{
+                width: 50rem;
+                height: 30rem;
+               
+                align-content: center;
+            }
+            .img_container h1{
+                text-align: center;
+            }
+            .img_container hr{
+                width:20rem;
+            }
+            .img_container .btn_controll{
+               margin-bottom: 3rem;
+            }
+            .btn_controll button {
+                padding: 0.3rem 1rem;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="img_container">
+                <h1>IMGAE ZOOM </h1>
+                <hr>
+              <div class="btn_controll">
+                  <button type="button" id="zoomin">Zoom-in</button>
+                  <button type="button"  id="zoomout">Zoom-out</button> 
+              </div>
+              <img src="./rise.jpg" alt="Rise" id="Rise">
+            </div>
+
+            <script src="zoom.js"></script>
+    </body>
+</html>
